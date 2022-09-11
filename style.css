@@ -260,6 +260,7 @@ nav{
 
     .panel {
         scale: 0.8;
+        margin-inline: 0px;
     }
 
     .Text2{
