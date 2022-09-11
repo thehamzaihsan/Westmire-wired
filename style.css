@@ -1,0 +1,257 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@font-face {
+    font-family: Roboto_thin;
+    src: url('./fonts/Roboto/Roboto-Thin.ttf');
+}
+@font-face {
+    font-family: Roboto_medium;
+    src: url('./fonts/Roboto/Roboto-Medium.ttf');
+}
+@font-face {
+    font-family: Roboto_bold;
+    src: url('./fonts/Roboto/Roboto-Bold.ttf');
+}
+@font-face {
+    font-family: Roboto;
+    src: url('./fonts/Roboto/Roboto-Regular.ttf');
+}
+.canva-section a{
+    text-decoration: none;
+    
+}
+body{
+    background: rgb(23,176,184);
+    background: linear-gradient(45deg, rgba(23,176,184,1) 15%, rgba(210,255,253,1) 87%);
+    font-family: 'Roboto';
+    background-repeat: no-repeat;
+    overflow-wrap: break-word;
+    overflow-x: hidden;
+ 
+}
+p , address{
+    font-family: 'Roboto_thin';
+}
+
+/***** Section1*****/
+
+nav img{
+    width: 20px;
+    height: 20px;
+}
+nav{
+    margin: 1em;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+
+.mainimage{
+
+    height: 25pc;
+    width: inherit;
+    padding: 10px;
+    margin-inline: auto;
+    margin-right: 10em;
+
+}
+
+
+
+.panel{
+    white-space: nowrap;
+    overflow:visible;
+    text-overflow: ellipsis;
+    padding: 10px;
+    margin-inline: auto;
+
+
+}
+
+.panel h1{
+    font-size: 60px;
+}
+
+.panel .h01{
+    font-family:'Roboto_thin';
+}
+
+.panel .h02{
+    font-family:'Roboto_medium';
+}
+
+
+.btn-light{
+    width: 10pc;
+    height: 5pc;
+    text-decoration: none;
+    border-radius: 100px;
+    margin: 10px;
+    margin-top: 70px;
+}
+
+.btn-light:active{
+    transform: translateY(4px);
+}
+
+.emptyspace{
+    padding: 3em;
+}
+
+/***** Section2*****/
+.main1{
+    display: flex;
+    flex-direction: row;
+    margin: 1pc;
+    
+}
+
+.img-responsive{
+
+    border-radius: 0px 30px 0px 0px;
+    box-shadow: 2px 2px 7px;
+    margin: 0px;
+}
+
+.Text2{
+    text-align:left;
+    margin: auto;
+    
+}
+
+/***** Section 3*****/
+
+.Text2 h3{
+    text-align: center; 
+}
+
+.cardspace{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3,1fr);
+    margin-inline: 1rem;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.card{
+    border-radius: 0px 50px 0px 50px;
+    text-align: center;
+    scale: 0.8;
+    overflow: hidden;
+
+}
+
+
+.card-img-top{
+    scale: 0.9;
+    border-radius: 0px 50px 0px 0px;
+}
+
+.card-text{
+    padding: 1em;
+}
+
+.card-title{
+    text-transform:uppercase ;
+    font-family: 'Roboto_bold'; 
+}
+
+.section3 button{
+    display: flex;
+    scale: 0.8;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto_Bold';
+}
+/***** Section4*****/
+
+.section4{
+    display: flex;
+    justify-content: space-evenly;
+    margin-inline: 10rem;
+}
+
+
+
+.section4 div h1{
+    margin: 2rem;
+    font-family: 'Roboto_thin';
+}
+
+.section4 div p{
+    font-family: 'Roboto_bold';
+}
+
+.fa {
+    font-size: 20px;
+    width: 30px;
+    height: inherit;
+    text-decoration: none;
+    margin: 5px 5px;
+    border-radius: 50%;
+    color: white;
+}
+.fa:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+  
+
+/***** media queries etc. *****/
+@media screen and (width <= 1000px){
+    .main , .main1{
+     flex-direction: column;
+     align-items: center;
+     margin: auto;
+    } 
+ 
+    .mainimage , .image{
+     margin-right:0em;
+    }
+
+    .Text2{
+        margin: 10px;
+        align-items: center;
+    }
+
+ }
+
+ @media screen and (width <= 860px){
+    .cardspace{
+      scale: 0.8;
+
+    }
+    .image{
+        scale: 0.6;
+    }
+ }
+
+ @media screen and (width <= 700px){
+    body{
+        text-align: center;
+    }
+    .cardspace{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: none;
+        scale: 1;
+        gap: 0rem;
+    }
+
+    .section4{
+        flex-direction: column;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .panel {
+        scale: 0.8;
+    }
+ }
